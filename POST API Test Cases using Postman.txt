@@ -1,0 +1,19 @@
+pm.test("Status code is 201", function () {
+    pm.response.to.have.status(201);
+});
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+pm.test("Response time is less than 200ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(200);
+});
+pm.test("Status code name has string", function () {
+    pm.response.to.have.status("OK");
+});
+pm.test("Status code name has string", function () {
+    pm.response.to.have.status("Created");
+});
+pm.test("Expecting Name as Adish", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.name).to.eql('Adish');
+});

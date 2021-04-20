@@ -1,4 +1,6 @@
-URL>> https://reqres.in/api/users?id=2
+URL
+-------------------------------
+https://reqres.in/api/users?id=2
 
 JSON Body Response
 -------------------
